@@ -1,6 +1,8 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import gfgLogo from "../../assets/images/gfg.png"; 
+import leetcodeLogo from "../../assets/images/leetcode.png";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -56,16 +58,19 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.facebook ? (
-        <a
-          href={socialMediaLinks.facebook}
-          className="icon-button facebook"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-facebook-f"></i>
-          <span></span>
+      {/* GeeksforGeeks Profile */}
+      {socialMediaLinks.gfg ? (
+          <a href={socialMediaLinks.gfg} target="_blank" rel="noopener noreferrer">
+         <img src={gfgLogo} alt="GeeksforGeeks" style={{ width: "60px", height: "60px", borderRadius: "50%" }} />
         </a>
+      ) : null}
+
+      {/* LeetCode Profile */}
+      {socialMediaLinks.leetcode ? (
+          <a href={socialMediaLinks.leetcode} className="icon-button leetcode" target="_blank" rel="noopener noreferrer">
+          <img src={leetcodeLogo} alt="LeetCode"  style={{ width: "40px", height: "40px", borderRadius: "50%" }}  />
+        </a>
+
       ) : null}
 
       {socialMediaLinks.instagram ? (
@@ -80,17 +85,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.twitter ? (
-        <a
-          href={socialMediaLinks.twitter}
-          className="icon-button twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-twitter"></i>
-          <span></span>
-        </a>
-      ) : null}
 
       {socialMediaLinks.medium ? (
         <a

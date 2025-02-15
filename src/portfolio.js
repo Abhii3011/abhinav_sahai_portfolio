@@ -20,111 +20,69 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Parul Chaddha",
-  title: "Hi all, I'm Parul",
+  username: "Abhinav Sahai",
+  title: "Hi all, I'm Abhinav",
   subTitle: emoji(
-    "A passionate and aspiring Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Flask / Django and some other cool libraries and frameworks."
+    "Full Stack Developer 🚀 with more than a year of experience at Incedo, working for Verizon, a leading US-based telecom company. I have expertise in Java, React, Spring Boot, and Python."
   ),
-  resumeLink:
-  "https://drive.google.com/drive/folders/1nrTbSn_FJMR7oRMxJ9bmf92QsIs-tNUh?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "https://drive.google.com/file/d/1r205RbnQjCgJCH6E94yE4REQPC_mv4Fh/view?usp=sharing", 
+  displayGreeting: true
 };
+
+
+
+
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://www.github.com/parulchaddha",
-  linkedin: "https://www.linkedin.com/in/parulchaddha0904/",
-  gmail: "parul.chaddha94@gmail.com",
+  github: "https://github.com/Abhii3011",
+  linkedin: "https://www.linkedin.com/in/abhinav-sahai--/",
+  gmail: "sahaiabhinav7@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@parul947a",
+  medium: "https://medium.com/@sahaiabhinav7",
+  gfg:"https://www.geeksforgeeks.org/user/abhinavsahaiue194093eee/",
+  leetcode:"https://leetcode.com/u/abhinavsahai/",
+
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
-// Skills Section
 
+
+
+// Skills Section
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK DEVELOPER WHO LOVES BUILDING SCALABLE APPLICATIONS",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
-    ),
-    emoji(
-      "⚡ Develop backend services and Integration of third party services such as Firebase/ AWS / AZURE"
-    )
+    emoji("⚡ Develop robust Java backend services with Spring Boot"),
+    emoji("⚡ Build responsive front-end interfaces using React and Material-UI"),
+    emoji("⚡ Automate deployment processes with Python and Shell scripting"),
+    emoji("⚡ Write unit and UI test cases using JUnit, Mockito, and Cypress"),
+    emoji("⚡ Upgrade frameworks and migrate components for improved UI/UX")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
+ 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "git",
-      fontAwesomeClassname: "fab fa-git"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "github",
-      fontAwesomeClassname: "fab fa-github"
-    },
-    {
-      skillName: "C language",
-      fontAwesomeClassname: "fab fa-cuttlefish"
-    },
-    {
-      skillName: "C++ language",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "Mongo DB",
-      fontAwesomeClassname: "fa fa-database"
-    }
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "Spring Boot", fontAwesomeClassname: "fas fa-leaf" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "MUI", fontAwesomeClassname: "fas fa-paint-brush" },
+    { skillName: "Cypress", fontAwesomeClassname: "fas fa-vial" },
+    { skillName: "JUnit", fontAwesomeClassname: "fas fa-bug" },
+    { skillName: "Mockito", fontAwesomeClassname: "fas fa-robot" },
+    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
@@ -133,75 +91,67 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Banasthali Vidyapith",
-      logo: require("./assets/images/bv.jfif"),
-      subHeader: "Bachelor's of Technology in Information Technology",
-      duration: "July 2021 - May 2025",
-      desc: "Scored 9.59 cgpa till now",
+      schoolName: "UIET, Panjab University Chandigarh",
+      logo: require("./assets/images/uiet.png"),
+      subHeader: "Bachelor of Engineering in Electrical & Electronics",
+      duration: "2019 - 2023",
+      desc: "CGPA: 7.73/10. Led data analytics team and worked on real-world datasets.",
       descBullets: [
-        "Let a coding club and conducted many technical workshops.",
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed problem-solving, teamwork, and presentation skills.",
+        "Worked on machine learning projects and data analytics challenges."
       ]
-    },
-    {
-      schoolName: "Divine Public School",
-      logo: require("./assets/images/divine.jfif"),
-      subHeader: "Senior Secondary School",
-      duration: "April 2019 - May 2021",
-      desc: "Ranked 2 in the board examination in the school with a 95%",
-      descBullets: ["Served as the head girl for one year and managed several technical and cultural events"]
     }
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
+// Tech Stack & Proficiency
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Version Control",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "UI/UX Design", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
+    { Stack: "Frontend/Design", progressPercentage: "75%" },
+    { Stack: "Backend Development", progressPercentage: "90%" },
+    { Stack: "Deployment Automation", progressPercentage: "60%" },
+    { Stack: "Testing & Debugging", progressPercentage: "80%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
 
+
+// Work Experience
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineering Intern",
-      company: "American Express",
-      companylogo: require("./assets/images/amex.jpg"),
-      date: "Oct 2022 - Mar 2023",
-      desc: "",
+      role: "Software Engineer",
+      company: "Incedo Inc.",
+      companylogo: require("./assets/images/incedo.png"),
+      date: "Sep 2023 - Present",
       descBullets: [
-        "Optimized web applications through DNS setup, efficient TCP/IP routing, and audit logging with Django,enhancing security and tracking user activities",
-        "Configured enterprise-level routers and switches for seamless performance. Developed dashboards for real-time network management, incorporating advanced device model filters",
-        "Enhanced operational efficiency by resolving a bug in RFC creation, eliminating unnecessary information display.Implemented auto-population of device descriptions and details in RFC forms, improving accuracy and user experience"
+        "Developed and refactored Java backend functionalities, ensuring code quality.",
+        "Upgraded React and Spring Boot frameworks, migrated canvas components to MUI.",
+        "Automated deployment processes using Python, reducing manual work.",
+        "Wrote Cypress test cases for UI and API testing.",
+        "Addressed security vulnerabilities in Java applications."
       ]
     },
+    {
+      role: "Freelancer - Web Dev & Content Creation",
+      company: "Self-Employed",
+      companylogo: require("./assets/images/freelance.png"),
+      date: "June 2021 - Dec 2022",
+      descBullets: [
+        "Developed full-stack web applications for small businesses.",
+        "Worked closely with clients to customize and optimize web solutions."
+      ]
+    }
   ]
 };
+
+
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -217,174 +167,126 @@ const bigProjects = {
   title: "Projects",
   subtitle: "SOME OF MY PERSONAL AND TEAM PROJECTS",
   projects: [
-    {
-      image: require("./assets/images/tastebud.jpeg"),
-      projectName: "Tastebud",
-      projectDesc: "A recipe generator and exploration tool enabling users to discover personalized recipes based on ingredients, cuisine preferences, and dietary needs.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/parulchaddha/TasteBud-AI"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/brain.jpeg"),
-      projectName: "Tumortrack",
-      projectDesc: "Developed a brain tumor classification system with the Xception CNN model, achieving 99.16% accuracy on MRI scans",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://colab.research.google.com/drive/1RkxKmpnk5F-dIsgAe4GtMdTvHdsYSrqi?usp=sharing"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/spam.png"),
-      projectName: "SMS spam detector",
-      projectDesc: " This project implements a SMS spam detector using Machine Learning algorithms, primarily based on the Multinomial Naive Bayes algorithm",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/parulchaddha/sms-spam-detector"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/web4.png"),
-      projectName: "People Counter",
-      projectDesc: " Utilizes the YOLO (You Only Look Once) object detection model to count the number of people moving in two directions in a video stream",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/parulchaddha/People-Counter"
-        }
-      ]
-    }
+    // {
+    //   image: require("./assets/images/tastebud.jpeg"),
+    //   projectName: "Tastebud",
+    //   projectDesc: "A recipe generator and exploration tool enabling users to discover personalized recipes based on ingredients, cuisine preferences, and dietary needs.",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://github.com/AbhinavSahai/TasteBud-AI"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/brain.jpeg"),
+    //   projectName: "Tumortrack",
+    //   projectDesc: "Developed a brain tumor classification system with the Xception CNN model, achieving 99.16% accuracy on MRI scans",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://colab.research.google.com/drive/1RkxKmpnk5F-dIsgAe4GtMdTvHdsYSrqi?usp=sharing"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/spam.png"),
+    //   projectName: "SMS spam detector",
+    //   projectDesc: " This project implements a SMS spam detector using Machine Learning algorithms, primarily based on the Multinomial Naive Bayes algorithm",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://github.com/AbhinavSahai/sms-spam-detector"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/web4.png"),
+    //   projectName: "People Counter",
+    //   projectDesc: " Utilizes the YOLO (You Only Look Once) object detection model to count the number of people moving in two directions in a video stream",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://github.com/AbhinavSahai/People-Counter"
+    //     }
+      // ]
+    // }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "Recognitions, Certifications, and Key Milestones in My Career",
 
   achievementsCards: [
     {
-      title: "DESIS Ascend Educare Scholar'22",
-      subtitle: "Selected in the top 40 girls all over india for mentorship program by The D.E.Shaw & Co.",
-      image: require("./assets/images/shaw.jfif"),
-      imageAlt: "D.E.Shaw",
+      title: "Google Professional Data Analytics Certification",
+      subtitle: "Completed a 6-month intensive Google-certified Data Analytics course.",
+      image: require("./assets/images/google-data.png"),
+      imageAlt: "Google Data Analytics",
       footerLink: [
         {
-          name: "Certification", 
-          url: "https://www.linkedin.com/posts/parulchaddha0904_deshaw-desis-ascend-activity-6983905017208410112-0JZT?utm_source=share&utm_medium=member_desktop"
-        },
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1j3oYI_CkHRRkjNcmsQT-fHep0PhiR5EM/view?usp=sharing"
+        }
       ]
     },
     {
-      title: "Flipkart girls Wanna Code 5.0",
-      subtitle: "Selected as the top 30 girls all over india out of 200 girls selected for mentorship program out of 14000+ applications",
-      image: require("./assets/images/flipkart.jpeg"),
-      imageAlt: "MS Logo",
+      title: "NPTEL Cloud Computing Certification",
+      subtitle: "Successfully completed NPTEL Cloud Computing course.",
+      image: require("./assets/images/nptel.png"),
+      imageAlt: "NPTEL Cloud Computing",
       footerLink: [
         {
-          name: "Certification", 
-          url: "https://www.linkedin.com/posts/parulchaddha0904_storyabrtime-warriors-flipkart-activity-7227890152457576448-2YQN?utm_source=share&utm_medium=member_desktop"
-        },
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1xVNa1QOmjxgdwqyPw_SnmWJEfHyOts32/view?usp=sharing"
+        }
       ]
     },
     {
-      title: "MICROSOFT AZURE AI-900 CERTIFICATE",
-      subtitle: "Completed Certification from Microsoft Learn Portal and learnt the basics of AI/ML",
-      image: require("./assets/images/ms.jfif"),
-      imageAlt: "MS Logo",
+      title: "Summer Training 2021 - Data Analysis",
+      subtitle: "Completed an in-depth training program focused on Data Analysis.",
+      image: require("./assets/images/data-analysis.png"),
+      imageAlt: "Data Analysis Training",
       footerLink: [
         {
-          name: "Certification", 
-          url: "https://learn.microsoft.com/en-us/users/parulchaddha-3539/credentials/9a9707e4ed679086"
-        },
+          name: "Certification",
+          url: "https://drive.google.com/file/d/10G1aeS7tWIJJSv8UPjDf_4vSc3Lu-jCl/view?usp=sharing"
+        }
       ]
     },
     {
-      title: "Postman Student Expert certification",
-      subtitle: "Completed Certification from Postman Academy and learnt the basics of API's",
-      image: require("./assets/images/postman.jfif"),
-      imageAlt: "Postman Logo",
+      title: "Full Stack Web Development Course (Udemy - 60 Hours)",
+      subtitle: "Completed a comprehensive Full Stack Web Development course covering frontend and backend technologies.",
+      image: require("./assets/images/udemy.png"),
+      imageAlt: "Udemy Full Stack",
       footerLink: [
         {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1jlbg0sAoMxux6_nv9lM5uPQ1PrF9lR55/view?usp=sharing"
-        },
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1HDI37a00EUR6b0aB5OS9RsKU3qdwaUeZ/view?usp=sharing"
+        }
       ]
     },
     {
-      title: "Code'N'Tech Coding competition",
-      subtitle: "Secured 1st runner up position out of 1000+ participants",
-      image: require("./assets/images/codentech.png"),
-      imageAlt: "Code'N'tech Logo",
+      title: "Prism Pride Month Supporter - NSS UIET",
+      subtitle: "Recognized for contributions in supporting diversity and inclusivity during Pride Month.",
+      image: require("./assets/images/prism-pride.png"),
+      imageAlt: "Prism Pride Supporter",
       footerLink: [
         {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1Po1jkqxPr4alKiVBoaOjvRHcSQM-rCP_/view?usp=share_link"
-        },
-      ]
-    },
-    {
-      title: "TechNova'22 Hackathon",
-      subtitle: "Contributed in a project named menses(about periods poverty) and Secured 1st runner up position",
-      image: require("./assets/images/technova.png"),
-      imageAlt: "TechNova Logo",
-      footerLink: [
-        {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/12sBSdkxwxmlTccsc2ALA9dGSrKCyZ502/view?usp=sharing"
-        },
-      ]
-    },
-    {
-      title: "#include<her> 1.0 ideathon",
-      subtitle: "Secured 2nd runner up position in the ideathon organised in collaboartion with Reskilll and Microsoft Azure",
-      image: require("./assets/images/azure.jpg"),
-      imageAlt: "#Include<her> Logo",
-      footerLink: [
-        {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1vPivLnAhtH94aqomVL-Clx5QFzhl82hp/view?usp=sharing"
-        },
-      ]
-    },  
-    {
-      title: "Microsoft Learn Student Ambassador",
-      subtitle: "Selected as MLSA in a global community of technology enthusiasts",
-      image: require("./assets/images/mlsa.jpg"),
-      imageAlt: "MLSA Logo",
-      footerLink: [
-        {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1SdVC5tZyugAXCh9jPFIMVa-2falFpb3Q/view?usp=sharing"
-        },
-      ]
-    },
-    {
-      title: "GeeksforGeeks x BV Chapter Lead",
-      subtitle: "Selected as the Chapter Lead of GeeksForGeeks student chapter of my college",
-      image: require("./assets/images/gfglogo.jpg"),
-      imageAlt: "#Include<her> Logo",
-      footerLink: [
-        {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1H25CzED_wDXntUNeMKWpSoXsaYAmbAmv/view?usp=sharing"
-        },
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1H2pQoO0axTVwKAbSEBavrerhZR2_gvPc/view?usp=sharing"
+        }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Blogs Section
 
@@ -395,37 +297,31 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://medium.com/@parul947a/convolutional-neural-networks-cnns-8577ced86332",
+      url: "https://medium.com/@sahaiabhinav7/convolutional-neural-networks-cnns-c88e27bd6efb",
       title: "Convolutional Neural Networks (CNNs)",
       description:
         "Neural networks are modeled after our brains. There are individual nodes that form the layers in the network, just like the neurons in our brains connect different areas."
     },
     {
-      url: "https://medium.com/@parul947a/american-express-on-campus-interview-experience-technology-intern-39938ad78b82",
-      title: "American Express Interview Experience",
-      description:
-        "The selection process consisted of an Online Assessment followed by two rounds of interviews."
-    },
-    {
-      url: "https://medium.com/@parul947a/react-hooks-29f0595c34e7",
+      url: "https://medium.com/@sahaiabhinav7/react-hooks-7f557754fd09",
       title: "React Hooks",
       description:
         "Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed."
     },
     {
-      url: "https://dev.to/parulchaddha/introduction-to-docker-13f9",
+      url: "https://medium.com/@sahaiabhinav7/introduction-to-docker-33dac44e4e01",
       title: "Introduction to Docker",
       description:
         "Docker is a set of platforms as a service (PaaS) products that use the Operating system level virtualization to deliver software in packages called containers."
     },
     {
-      url: "https://medium.com/@parul947a/json-introduction-639816a05b01",
+      url: "https://medium.com/@sahaiabhinav7/json-zero-to-hero-4930ea0cb30e",
       title: "JSON — Introduction",
       description:
         "JSON stands for JavaScript Object Notation.JSON is a text format for storing and transporting data.JSON is “self-describing” and easy to understand."
     },
     {
-      url: "https://medium.com/@parul947a/python-mysql-7f32bd74a9d7",
+      url: "https://medium.com/@sahaiabhinav7/python-mysql-98a8265e00d6",
       title: "Python MySQL",
       description:
         "Python can be used in database applications.Python needs a MySQL driver to access the MySQL database.I will use the driver “MySQL Connector” and recommend that you use PIP to install “MySQL Connector”."
@@ -437,20 +333,26 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
+  title: "SOCIAL WORK",
+  subtitle: emoji("Giving back to society through education and sustainability initiatives 🌍✨"),
   talks: [
     {
-      title: "Git and GitHub Workshop",
-      subtitle: "Speaker of Hands-on workshop which has more than 250+ attendees",
-      slides_url: "https://docs.google.com/presentation/d/1MY7mB09xhiyA5q05_mifLkIxTBnBBbaq88nrWqcq3FA/edit?usp=sharing",
-      event_url: "https://www.linkedin.com/feed/update/urn:li:activity:7114902429254455296/"
+      title: "Aazadi Project - Teaching Initiative",
+      subtitle:
+        "Taught underprivileged children and their uneducated mothers, empowering them with basic education and life skills.",
+      image_url: "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing" // Replace with actual image URL
     },
+    {
+      title: "Raddi Se Pragati - Sustainable Innovation",
+      subtitle:
+        "Collected waste materials and transformed them into useful and artistic creations, promoting sustainability and environmental awareness.",
+      image_url: "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing" // Replace with actual image URL
+    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
+
 
 // Podcast Section
 
@@ -469,14 +371,14 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  // number: "+91 ",
-     email_address: "parul.chaddha94@gmail.com"
+  number: "+91 7905271931 ",
+     email_address: "sahaiabhinav7@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "parul947a", //Replace "twitter" with your twitter username without @
+  userName: "", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
 };
 
