@@ -1,72 +1,53 @@
 /* Change this file to get your personal Portfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
+const illustration = { animated: true };
 
 const greeting = {
   username: "Abhinav Sahai",
   title: "Hi all, I'm Abhinav",
   subTitle: emoji(
-    "Full Stack Developer 🚀 with more than a year of experience at Incedo, working for Verizon, a leading US-based telecom company. I have expertise in Java, React, Spring Boot, and Python."
+    "Full Stack Software Engineer with 2+ years of experience (Incedo – Verizon) building scalable backend systems, microservices, automation pipelines, and real-time data ingestion platforms. Strong in Java, Spring Boot, React, Python automation, MemSQL pipelines, S3 ingestion, CI/CD, and production monitoring."
   ),
-  resumeLink: "https://drive.google.com/file/d/1r205RbnQjCgJCH6E94yE4REQPC_mv4Fh/view?usp=sharing", 
+  resumeLink:
+    "https://drive.google.com/file/d/1r205RbnQjCgJCH6E94yE4REQPC_mv4Fh/view?usp=sharing",
   displayGreeting: true
 };
 
-
-
-
-
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/Abhii3011",
   linkedin: "https://www.linkedin.com/in/abhinav-sahai--/",
   gmail: "sahaiabhinav7@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://medium.com/@sahaiabhinav7",
-  gfg:"https://www.geeksforgeeks.org/user/abhinavsahaiue194093eee/",
-  leetcode:"https://leetcode.com/u/abhinavsahai/",
-
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  gfg: "https://www.geeksforgeeks.org/user/abhinavsahaiue194093eee/",
+  leetcode: "https://leetcode.com/u/abhinavsahai/",
+  display: true
 };
-
-
-
 
 // Skills Section
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO LOVES BUILDING SCALABLE APPLICATIONS",
+  subTitle: "FULL STACK ENGINEER WHO BUILDS HIGH-PERFORMANCE SYSTEMS",
   skills: [
-    emoji("⚡ Develop robust Java backend services with Spring Boot"),
-    emoji("⚡ Build responsive front-end interfaces using React and Material-UI"),
-    emoji("⚡ Automate deployment processes with Python and Shell scripting"),
-    emoji("⚡ Write unit and UI test cases using JUnit, Mockito, and Cypress"),
-    emoji("⚡ Upgrade frameworks and migrate components for improved UI/UX")
+    emoji("⚡ Build scalable backend services using Java, Spring Boot, multithreading, and REST APIs"),
+    emoji("⚡ Work on real-time ingestion systems, data pipelines, and distributed components"),
+    emoji("⚡ Create automation workflows using Python, Shell scripting, Jenkins, and CI/CD"),
+    emoji("⚡ Develop modern frontends using React (16 → 18), MUI, and JavaScript"),
+    emoji("⚡ Design monitoring dashboards and observability using Grafana & Prometheus"),
+    emoji("⚡ Skilled in prompt engineering, GitHub Copilot, Gemini, and LLM-driven development")
   ],
 
- 
   softwareSkills: [
     { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
     { skillName: "Spring Boot", fontAwesomeClassname: "fas fa-leaf" },
@@ -86,39 +67,35 @@ const skillsSection = {
 };
 
 // Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "UIET, Panjab University Chandigarh",
       logo: require("./assets/images/uiet.png"),
       subHeader: "Bachelor of Engineering in Electrical & Electronics",
       duration: "2019 - 2023",
-      desc: "CGPA: 7.73/10. Led data analytics team and worked on real-world datasets.",
+      desc: "CGPA: 7.73/10. Led the college Data Analytics Team and worked on real-world datasets.",
       descBullets: [
-        "Developed problem-solving, teamwork, and presentation skills.",
-        "Worked on machine learning projects and data analytics challenges."
+        "Hands-on experience in data analytics and ML projects.",
+        "Developed strong problem-solving and teamwork skills."
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
-// Tech Stack & Proficiency
+// Tech Stack (Bars)
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Frontend/Design", progressPercentage: "75%" },
     { Stack: "Backend Development", progressPercentage: "90%" },
-    { Stack: "Deployment Automation", progressPercentage: "60%" },
-    { Stack: "Testing & Debugging", progressPercentage: "80%" }
+    { Stack: "Frontend / React", progressPercentage: "75%" },
+    { Stack: "Real-Time Ingestion & Pipelines", progressPercentage: "80%" },
+    { Stack: "Automation & DevOps", progressPercentage: "70%" },
+    { Stack: "Testing & Debugging", progressPercentage: "85%" }
   ],
   displayCodersrank: false
 };
-
-
 
 // Work Experience
 const workExperiences = {
@@ -126,106 +103,55 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Incedo Inc.",
+      company: "Incedo Inc. (Client: Verizon)",
       companylogo: require("./assets/images/incedo.png"),
       date: "Sep 2023 - Present",
       descBullets: [
-        "Developed and refactored Java backend functionalities, ensuring code quality.",
-        "Upgraded React and Spring Boot frameworks, migrated canvas components to MUI.",
-        "Automated deployment processes using Python, reducing manual work.",
-        "Wrote Cypress test cases for UI and API testing.",
-        "Addressed security vulnerabilities in Java applications."
+        "Designed a parserless real-time ingestion system converting XML → JSON via Python, loading into MemSQL pipelines, and processing with stored procedures.",
+        "Improved ingestion efficiency and reduced cloud compute costs by 50%+.",
+        "Developed scalable Spring Boot microservices with multi-threaded architecture.",
+        "Migrated frontend from React 16 → 18 and replaced Canvas components with MUI.",
+        "Built Grafana dashboards and Prometheus metrics for system-level observability.",
+        "Automated Java loader deployments using Python + Jenkins CI/CD pipelines.",
+        "Resolved critical security vulnerabilities and enhanced logging & alerting."
       ]
     },
     {
-      role: "Freelancer - Web Dev & Content Creation",
+      role: "Freelancer — Web Developer & Content Creator",
       company: "Self-Employed",
       companylogo: require("./assets/images/freelance.png"),
       date: "June 2021 - Dec 2022",
       descBullets: [
         "Developed full-stack web applications for small businesses.",
-        "Worked closely with clients to customize and optimize web solutions."
+        "Created technical content and delivered customized web solutions."
       ]
     }
   ]
 };
 
-
-
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// Open Source
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
-
+// Projects (kept disabled)
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME OF MY PERSONAL AND TEAM PROJECTS",
-  projects: [
-    // {
-    //   image: require("./assets/images/tastebud.jpeg"),
-    //   projectName: "Tastebud",
-    //   projectDesc: "A recipe generator and exploration tool enabling users to discover personalized recipes based on ingredients, cuisine preferences, and dietary needs.",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "https://github.com/AbhinavSahai/TasteBud-AI"
-    //     }
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/brain.jpeg"),
-    //   projectName: "Tumortrack",
-    //   projectDesc: "Developed a brain tumor classification system with the Xception CNN model, achieving 99.16% accuracy on MRI scans",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "https://colab.research.google.com/drive/1RkxKmpnk5F-dIsgAe4GtMdTvHdsYSrqi?usp=sharing"
-    //     }
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/spam.png"),
-    //   projectName: "SMS spam detector",
-    //   projectDesc: " This project implements a SMS spam detector using Machine Learning algorithms, primarily based on the Multinomial Naive Bayes algorithm",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "https://github.com/AbhinavSahai/sms-spam-detector"
-    //     }
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/web4.png"),
-    //   projectName: "People Counter",
-    //   projectDesc: " Utilizes the YOLO (You Only Look Once) object detection model to count the number of people moving in two directions in a video stream",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "https://github.com/AbhinavSahai/People-Counter"
-    //     }
-      // ]
-    // }
-  ],
-  display: false // Set false to hide this section, defaults to true
+  subtitle: "PERSONAL & TEAM PROJECTS",
+  projects: [],
+  display: false
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievements / Certifications
 const achievementSection = {
   title: emoji("Achievements & Certifications 🏆"),
-  subtitle: "Recognitions, Certifications, and Key Milestones in My Career",
+  subtitle: "Recognitions, certifications, and milestones",
 
   achievementsCards: [
     {
       title: "Google Professional Data Analytics Certification",
-      subtitle: "Completed a 6-month intensive Google-certified Data Analytics course.",
+      subtitle: "Completed Google-certified 6-month Data Analytics specialization.",
       image: require("./assets/images/google-data.png"),
       imageAlt: "Google Data Analytics",
       footerLink: [
@@ -239,7 +165,7 @@ const achievementSection = {
       title: "NPTEL Cloud Computing Certification",
       subtitle: "Successfully completed NPTEL Cloud Computing course.",
       image: require("./assets/images/nptel.png"),
-      imageAlt: "NPTEL Cloud Computing",
+      imageAlt: "NPTEL Cloud",
       footerLink: [
         {
           name: "Certification",
@@ -248,10 +174,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Summer Training 2021 - Data Analysis",
-      subtitle: "Completed an in-depth training program focused on Data Analysis.",
+      title: "Data Analysis Training (Summer 2021)",
+      subtitle: "Completed an in-depth training program in Python and data analysis.",
       image: require("./assets/images/data-analysis.png"),
-      imageAlt: "Data Analysis Training",
+      imageAlt: "Data Analysis",
       footerLink: [
         {
           name: "Certification",
@@ -260,10 +186,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Full Stack Web Development Course (Udemy - 60 Hours)",
-      subtitle: "Completed a comprehensive Full Stack Web Development course covering frontend and backend technologies.",
+      title: "Full Stack Web Development (Udemy – 60 Hours)",
+      subtitle: "Complete full-stack web development training.",
       image: require("./assets/images/udemy.png"),
-      imageAlt: "Udemy Full Stack",
+      imageAlt: "Udemy",
       footerLink: [
         {
           name: "Certification",
@@ -272,10 +198,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Prism Pride Month Supporter - NSS UIET",
-      subtitle: "Recognized for contributions in supporting diversity and inclusivity during Pride Month.",
+      title: "Prism Pride Month Supporter – NSS UIET",
+      subtitle: "Recognized for contributions supporting diversity & inclusion.",
       image: require("./assets/images/prism-pride.png"),
-      imageAlt: "Prism Pride Supporter",
+      imageAlt: "Prism Pride",
       footerLink: [
         {
           name: "Certification",
@@ -284,105 +210,94 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-
-// Blogs Section
-
+// Blogs
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "I love writing technical articles and sharing what I learn.",
+  displayMediumBlogs: "true",
+
   blogs: [
     {
       url: "https://medium.com/@sahaiabhinav7/convolutional-neural-networks-cnns-c88e27bd6efb",
       title: "Convolutional Neural Networks (CNNs)",
-      description:
-        "Neural networks are modeled after our brains. There are individual nodes that form the layers in the network, just like the neurons in our brains connect different areas."
+      description: "Deep learning fundamentals explained simply."
     },
     {
       url: "https://medium.com/@sahaiabhinav7/react-hooks-7f557754fd09",
       title: "React Hooks",
-      description:
-        "Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed."
+      description: "Simplifying modern React development."
     },
     {
       url: "https://medium.com/@sahaiabhinav7/introduction-to-docker-33dac44e4e01",
       title: "Introduction to Docker",
-      description:
-        "Docker is a set of platforms as a service (PaaS) products that use the Operating system level virtualization to deliver software in packages called containers."
+      description: "Understanding containers and deployments."
     },
     {
       url: "https://medium.com/@sahaiabhinav7/json-zero-to-hero-4930ea0cb30e",
       title: "JSON — Introduction",
-      description:
-        "JSON stands for JavaScript Object Notation.JSON is a text format for storing and transporting data.JSON is “self-describing” and easy to understand."
+      description: "A beginner-friendly guide."
     },
     {
       url: "https://medium.com/@sahaiabhinav7/python-mysql-98a8265e00d6",
       title: "Python MySQL",
-      description:
-        "Python can be used in database applications.Python needs a MySQL driver to access the MySQL database.I will use the driver “MySQL Connector” and recommend that you use PIP to install “MySQL Connector”."
-    },
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "SOCIAL WORK",
-  subtitle: emoji("Giving back to society through education and sustainability initiatives 🌍✨"),
-  talks: [
-    {
-      title: "Aazadi Project - Teaching Initiative",
-      subtitle:
-        "Taught underprivileged children and their uneducated mothers, empowering them with basic education and life skills.",
-      image_url: "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing" // Replace with actual image URL
-    },
-    {
-      title: "Raddi Se Pragati - Sustainable Innovation",
-      subtitle:
-        "Collected waste materials and transformed them into useful and artistic creations, promoting sustainability and environmental awareness.",
-      image_url: "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing" // Replace with actual image URL
+      description: "Connecting Python with MySQL databases."
     }
   ],
   display: true
 };
 
+// Talks / Social Work
+const talkSection = {
+  title: "SOCIAL WORK",
+  subtitle: emoji(
+    "Giving back through education, sustainability, and community initiatives 🌍✨"
+  ),
+  talks: [
+    {
+      title: "Aazadi Project - Teaching Initiative",
+      subtitle:
+        "Taught underprivileged children and their mothers—basic education, awareness, and empowerment.",
+      image_url:
+        "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing"
+    },
+    {
+      title: "Raddi Se Pragati - Sustainable Innovation",
+      subtitle:
+        "Collected waste materials and turned them into useful products to promote environmental sustainability.",
+      image_url:
+        "https://drive.google.com/drive/folders/1_QLxb3YHTDNWWjak6b7y2RrN9eR2n6Ss?usp=sharing"
+    }
+  ],
+  display: true
+};
 
-
-// Podcast Section
-
+// Podcast (Disabled)
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
+  subtitle: "I LOVE TO TALK ABOUT TECHNOLOGY",
+  podcast: [],
+  display: false
 };
 
+// Contact
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91 7905271931 ",
-     email_address: "sahaiabhinav7@gmail.com"
+  subtitle: "Want to discuss a project or just say hi? Feel free to reach out.",
+  number: "+91 7905271931",
+  email_address: "sahaiabhinav7@gmail.com"
 };
 
-// Twitter Section
-
+// Twitter Section (Disabled)
 const twitterDetails = {
-  userName: "", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "",
+  display: false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,
