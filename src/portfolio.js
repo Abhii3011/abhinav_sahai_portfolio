@@ -20,7 +20,7 @@ const greeting = {
     "Full Stack Software Engineer with 2+ years of experience (Incedo – Verizon) building scalable backend systems, microservices, automation pipelines, and real-time data ingestion platforms. Strong in Java, Spring Boot, React, Python automation, MemSQL pipelines, S3 ingestion, CI/CD, and production monitoring."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1r205RbnQjCgJCH6E94yE4REQPC_mv4Fh/view?usp=sharing",
+    "https://drive.google.com/file/d/1Xa-SQQErFzQjazpX_G_3tOd0V-7nT-16/view?usp=sharing",
   displayGreeting: true
 };
 
